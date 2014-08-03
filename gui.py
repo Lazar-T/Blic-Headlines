@@ -1,11 +1,9 @@
 import sys
-import time
 import webbrowser
 from PySide.QtCore import *
 from PySide.QtGui import *
 import scrapingBlic
 
-i = 1
 
 def openFirstStory():
     webbrowser.open(href1)
@@ -64,10 +62,7 @@ class Form(QDialog):
 
 
 while True:
-    i = i + 1
-    print i
     app = QApplication(sys.argv)
     form = Form()
     form.show()
     app.exec_()
-    time.sleep(2)
