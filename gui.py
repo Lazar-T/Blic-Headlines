@@ -61,8 +61,8 @@ class Form(QDialog):
         self.setWindowIcon(QIcon('blic.png'))
 
 
-while True:
-    app = QApplication(sys.argv)
-    form = Form()
-    form.show()
-    app.exec_()
+app = QApplication(sys.argv)
+form = Form()
+form.show()
+app.exec_()
+
