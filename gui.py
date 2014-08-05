@@ -10,10 +10,6 @@ import economyNews
 from hoveringText import headlinesHover, worldNewsHover, chronicNewsHover, societyNewsHover, economyNewsHover
 
 
-
-
-
-
 def currentStoryOne():
     webbrowser.open(href1)
 
@@ -38,17 +34,16 @@ def worldStoryOne():
     webbrowser.open(href10)
 
 
-
 def worldStoryTwo():
-    webbrowser.open(href11)   
+    webbrowser.open(href11)
 
 
 def worldStoryThree():
-    webbrowser.open(href12)  
-  
+    webbrowser.open(href12)
+
 
 def worldStoryFour():
-    webbrowser.open(href13)      
+    webbrowser.open(href13)
 
 
 def chronicNewsOne():
@@ -88,7 +83,7 @@ def economyNewsOne():
 
 
 def economyNewsTwo():
-    webbrowser.open(href23)    
+    webbrowser.open(href23)
 
 
 def economyNewsThree():
@@ -97,7 +92,6 @@ def economyNewsThree():
 
 def economyNewsFour():
     webbrowser.open(href25)
-
 
 
 text1, href1 = scrapingBlic.firstHeadline()
@@ -154,14 +148,13 @@ hoveringText19 = economyNewsHover.hoverText19()
 hoveringText20 = economyNewsHover.hoverText20()
 hoveringText21 = economyNewsHover.hoverText21()
 
+
 class Form(QDialog):
 
     def __init__(self, parent=None):
         super(Form, self).__init__(parent)
 
-
-        
-        self.label1 = QLabel("<font color=#C11B17><b>" + 'Trenutne naslovne vesti:' + "</b></font>")            #"<font color=red size=72><b>" + message + "</b></font>")
+        self.label1 = QLabel("<font color=#C11B17><b>" + 'Trenutne naslovne vesti:' + "</b></font>")
         self.label2 = QLabel("<font color=#C11B17><b>" + 'Svet:' + "</b></font>")
         self.label3 = QLabel("<font color=#C11B17><b>" + 'Hronika:' + "</b></font>")
         self.label4 = QLabel("<font color=#C11B17><b>" + 'Drustvo:' + "</b></font>")
@@ -206,16 +199,13 @@ class Form(QDialog):
         button17.setToolTip(hoveringText17)
 
         button18 = QPushButton(text22, self)
-        button18.setToolTip(hoveringText18)            
+        button18.setToolTip(hoveringText18)
         button19 = QPushButton(text23, self)
-        button19.setToolTip(hoveringText19)   
+        button19.setToolTip(hoveringText19)
         button20 = QPushButton(text24, self)
         button20.setToolTip(hoveringText20)
         button21 = QPushButton(text25, self)
         button21.setToolTip(hoveringText21)
-
-
-
 
         self.connect(button1, SIGNAL("clicked()"), currentStoryOne)
         self.connect(button2, SIGNAL("clicked()"), currentStoryTwo)
@@ -275,9 +265,7 @@ class Form(QDialog):
         layout.addWidget(button20)
         layout.addWidget(button21)
 
-
         self.setLayout(layout)
-
         self.setWindowTitle("Naslovi na blic.rs")
         self.setWindowIcon(QIcon('blic.png'))
 
@@ -286,4 +274,3 @@ app = QApplication(sys.argv)
 form = Form()
 form.show()
 app.exec_()
-
