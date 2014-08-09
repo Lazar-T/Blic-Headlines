@@ -167,7 +167,7 @@ class Form(QDialog):
         button3 = QPushButton(text3, self)
         button3.setToolTip(hoveringText3)
         button4 = QPushButton(text4, self)
-        #button4.setToolTip(hoveringText4)
+        button4.setToolTip(hoveringText4)
         button5 = QPushButton(text5, self)
         button5.setToolTip(hoveringText5)
 
@@ -268,6 +268,7 @@ class Form(QDialog):
         self.setLayout(layout)
         self.setWindowTitle("Naslovi na blic.rs")
         self.setWindowIcon(QIcon('blic.png'))
+        self.setGeometry(300, 300, 250, 150)
 
 
 app = QApplication(sys.argv)

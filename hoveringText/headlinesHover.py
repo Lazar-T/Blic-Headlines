@@ -34,7 +34,7 @@ def hoverText3():
 def hoverText4():
     page = urllib.urlopen(href4)
     soup = BeautifulSoup(page)
-    hoveringText = soup.find(id="article_lead")
+    hoveringText = soup.find(id="article_lead").text
     return hoveringText
 
 
