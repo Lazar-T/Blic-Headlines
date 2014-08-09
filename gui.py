@@ -268,7 +268,7 @@ class Form(QDialog):
         self.setLayout(layout)
         self.setWindowTitle("Naslovi na blic.rs")
         self.setWindowIcon(QIcon('blic.png'))
-        self.setGeometry(300, 300, 250, 150)
+        
 
 
 app = QApplication(sys.argv)
