@@ -2,12 +2,8 @@ import sys
 import webbrowser
 from PySide.QtCore import *
 from PySide.QtGui import *
-import scrapingBlic
-import worldNews
-import chronicNews
-import societyNews
-import economyNews
-from hoveringText import headlinesHover, worldNewsHover, chronicNewsHover, societyNewsHover, economyNewsHover
+import storiesText
+import hoveringText
 
 
 def currentStoryOne():
@@ -94,59 +90,59 @@ def economyNewsFour():
     webbrowser.open(href25)
 
 
-text1, href1 = scrapingBlic.firstHeadline()
-text2, href2 = scrapingBlic.secondHeadline()
-text3, href3 = scrapingBlic.thirdHeadline()
-text4, href4 = scrapingBlic.forthHeadline()
-text5, href5 = scrapingBlic.fifthHeadline()
+text1, href1 = storiesText.firstHeadline()
+text2, href2 = storiesText.secondHeadline()
+text3, href3 = storiesText.thirdHeadline()
+text4, href4 = storiesText.forthHeadline()
+text5, href5 = storiesText.fifthHeadline()
 
-hoveringText1 = headlinesHover.hoverText1()
-hoveringText2 = headlinesHover.hoverText2()
-hoveringText3 = headlinesHover.hoverText3()
-hoveringText4 = headlinesHover.hoverText4()
-hoveringText5 = headlinesHover.hoverText5()
+hoveringText1 = hoveringText.hoverText1()
+hoveringText2 = hoveringText.hoverText2()
+hoveringText3 = hoveringText.hoverText3()
+hoveringText4 = hoveringText.hoverText4()
+hoveringText5 = hoveringText.hoverText5()
 
-text10, href10 = worldNews.worldNewsOne()
-text11, href11 = worldNews.worldNewsTwo()
-text12, href12 = worldNews.worldNewsThree()
-text13, href13 = worldNews.worldNewsFour()
+text10, href10 = storiesText.world_story_one()
+text11, href11 = storiesText.world_story_one()
+text12, href12 = storiesText.world_story_three()
+text13, href13 = storiesText.world_story_four()
 
-hoveringText6 = worldNewsHover.hoverText6()
-hoveringText7 = worldNewsHover.hoverText7()
-hoveringText8 = worldNewsHover.hoverText8()
-hoveringText9 = worldNewsHover.hoverText9()
+hoveringText6 = hoveringText.hoverText6()
+hoveringText7 = hoveringText.hoverText7()
+hoveringText8 = hoveringText.hoverText8()
+hoveringText9 = hoveringText.hoverText9()
 
-text14, href14 = chronicNews.chronicStoryOne()
-text15, href15 = chronicNews.chronicStoryTwo()
-text16, href16 = chronicNews.chronicStoryThree()
-text17, href17 = chronicNews.chronicStoryFour()
+text14, href14 = storiesText.chronic_story_one()
+text15, href15 = storiesText.chronic_story_two()
+text16, href16 = storiesText.chronic_story_three()
+text17, href17 = storiesText.chronic_story_four()
 
-hoveringText10 = chronicNewsHover.hoverText10()
-hoveringText11 = chronicNewsHover.hoverText11()
-hoveringText12 = chronicNewsHover.hoverText12()
-hoveringText13 = chronicNewsHover.hoverText13()
+hoveringText10 = hoveringText.hoverText10()
+hoveringText11 = hoveringText.hoverText11()
+hoveringText12 = hoveringText.hoverText12()
+hoveringText13 = hoveringText.hoverText13()
 
-text18, href18 = societyNews.societyStoryOne()
-text19, href19 = societyNews.societyStoryTwo()
-text20, href20 = societyNews.societyStoryThree()
-text21, href21 = societyNews.societyStoryFour()
+text18, href18 = storiesText.society_story_one()
+text19, href19 = storiesText.society_story_two()
+text20, href20 = storiesText.society_story_three()
+text21, href21 = storiesText.society_story_four()
 
-hoveringText14 = societyNewsHover.hoverText14()
-hoveringText15 = societyNewsHover.hoverText15()
-hoveringText16 = societyNewsHover.hoverText16()
-hoveringText17 = societyNewsHover.hoverText17()
-
-
-text22, href22 = economyNews.economyStoryOne()
-text23, href23 = economyNews.economyStoryTwo()
-text24, href24 = economyNews.economyStoryThree()
-text25, href25 = economyNews.economyStoryFour()
+hoveringText14 = hoveringText.hoverText14()
+hoveringText15 = hoveringText.hoverText15()
+hoveringText16 = hoveringText.hoverText16()
+hoveringText17 = hoveringText.hoverText17()
 
 
-hoveringText18 = economyNewsHover.hoverText18()
-hoveringText19 = economyNewsHover.hoverText19()
-hoveringText20 = economyNewsHover.hoverText20()
-hoveringText21 = economyNewsHover.hoverText21()
+text22, href22 = storiesText.economy_story_one()
+text23, href23 = storiesText.economy_story_two()
+text24, href24 = storiesText.economy_story_three()
+text25, href25 = storiesText.economy_story_four()
+
+
+hoveringText18 = hoveringText.hoverText18()
+hoveringText19 = hoveringText.hoverText19()
+hoveringText20 = hoveringText.hoverText20()
+hoveringText21 = hoveringText.hoverText21()
 
 
 class Form(QDialog):
@@ -268,7 +264,6 @@ class Form(QDialog):
         self.setLayout(layout)
         self.setWindowTitle("Naslovi na blic.rs")
         self.setWindowIcon(QIcon('blic.png'))
-        
 
 
 app = QApplication(sys.argv)
