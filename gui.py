@@ -157,7 +157,7 @@ class Form(QDialog):
         self.label5 = QLabel("<font color=#C11B17><b>" + 'Ekonomija:' + "</b></font>")
 
         button1 = QPushButton(text1, self)
-        button1.setToolTip("<i>" + text1 + "</i>")
+        button1.setToolTip("<i>" + hoveringText1 + "</i>")
         button2 = QPushButton(text2, self)
         button2.setToolTip("<i>" + hoveringText2 + "</i>")
         button3 = QPushButton(text3, self)
