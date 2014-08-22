@@ -103,7 +103,7 @@ hoveringText4 = hoveringText.hoverText4()
 hoveringText5 = hoveringText.hoverText5()
 
 text10, href10 = storiesText.world_story_one()
-text11, href11 = storiesText.world_story_one()
+text11, href11 = storiesText.world_story_two()
 text12, href12 = storiesText.world_story_three()
 text13, href13 = storiesText.world_story_four()
 
