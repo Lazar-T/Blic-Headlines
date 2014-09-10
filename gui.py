@@ -93,7 +93,7 @@ def economyNewsFour():
 text1, href1 = storiesText.firstHeadline()
 text2, href2 = storiesText.secondHeadline()
 text3, href3 = storiesText.thirdHeadline()
-text4, href4 = storiesText.forthHeadline()
+text4, href4 = storiesText.fourthHeadline()
 text5, href5 = storiesText.fifthHeadline()
 
 hoveringText1 = hoveringText.hoverText1()

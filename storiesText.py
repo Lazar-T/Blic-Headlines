@@ -28,7 +28,7 @@ def thirdHeadline():
     return text3, href3
 
 
-def forthHeadline():
+def fourthHeadline():
     text4 = soup.select("#home_main_article_text")[3].h1.text
     href4 = soup.select("#home_main_article_text")[3].a.get('href')
     return text4, href4
