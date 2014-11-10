@@ -1,7 +1,7 @@
 blic_news
 =========
 
-###About:
+###About
 blic_news is GUI application using Pyside and Beautiful Soup that allows you to see latest articles from news site blic.rs, and option to open them in web browser to see full story.
 
 ###Screenshot
