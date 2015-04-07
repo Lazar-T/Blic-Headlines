@@ -10,7 +10,7 @@ blic_news is GUI application using Pyside and Beautiful Soup that allows you to 
 
 ### Requirements
 
-blic_news uses [Pyside](http://qt-project.org/wiki/PySide) and [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
+blic_news uses [Pyside](http://qt-project.org/wiki/PySide) and [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/).
 
 You need to have them installed to run program.
 
