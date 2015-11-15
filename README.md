@@ -2,7 +2,7 @@ blic_news
 =========
 
 ###About
-blic_news is GUI application built with [Pyside](https://wiki.qt.io/Category:LanguageBindings::PySide) and [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/) that allows you to see latest headlines from news site [blic.rs](http://www.blic.rs/), and option to open them in web browser to see full story. Also option for hovering over headline to see the first paragraph of the article.
+blic_news is GUI application built with [Pyside](https://wiki.qt.io/Category:LanguageBindings::PySide) and [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/) that allows you to see latest headlines from news site [blic.rs](http://www.blic.rs/). Option to open them in web browser with the click on a button to see full story. Also available is option for hovering over headline to see the first paragraph of the article.
 
 ###Screenshot
 
